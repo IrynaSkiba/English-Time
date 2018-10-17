@@ -16,7 +16,8 @@
  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/Activity/translate.PNG)
  #### 3.3 Добавление слова в коллекцию
  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/Activity/add.PNG)
- #### 3.4 Иземнение настроек
+ #### 3.4 Изменение настроек
  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/Activity/settings.PNG)
  
  ## 4 Диаграмма последовательности
+![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/sequence.PNG)
