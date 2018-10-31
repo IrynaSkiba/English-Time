@@ -120,5 +120,7 @@
   ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/State/settingsstate.PNG)
   
  ## 7 Диаграмма компонентов <a name="7"></a>
- 
+![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/Component.PNG) 
+
  ## 8 Диаграмма развертывания <a name="8"></a>
+![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/deployment.PNG) 
