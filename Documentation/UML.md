@@ -8,6 +8,14 @@
 3.3 [Добавление слова в коллекцию](#3.3) <br>
 3.4 [Изменение настроек](#3.4) <br>
 4. [Диаграмма последовательности](#4) <br>
+5. [Диаграмма классов](#5) <br>
+6. [Диаграммы состояний](#6) <br>
+6.1 [Тренировка слов](#6.1) <br>
+6.2 [Перевод слов](#6.2) <br>
+6.3 [Добавление слова в коллекцию](#6.3) <br>
+6.4 [Изменение настроек](#6.4) <br>
+7. [Диаграмма компонентов](#7) <br>
+8. [Диаграмма развертывания](#8) <br>
 
 
 ## 1 Глоссарий <a name="1"></a>
@@ -94,3 +102,23 @@
  
  ## 4 Диаграмма последовательности <a name="4"></a>
 ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/sequence.PNG)
+
+ ## 5 Диаграмма классов <a name="5"></a>
+ 
+ ## 6 Диаграммы состояний <a name="6"></a>
+ 
+ #### 6.1 Тренировка слов <a name="6.1"></a>
+  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/State/trainingstate.PNG)
+  
+ #### 6.2 Перевод слов <a name="6.2"></a>
+ ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/State/translatestate.PNG)
+   
+ #### 6.3 Добавление слова в коллекцию <a name="6.3"></a>
+  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/State/addstate.PNG)
+  
+ #### 6.4 Изменение настроек <a name="6.4"></a>
+  ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/State/settingsstate.PNG)
+  
+ ## 7 Диаграмма компонентов <a name="7"></a>
+ 
+ ## 8 Диаграмма развертывания <a name="8"></a>
