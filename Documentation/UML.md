@@ -104,7 +104,8 @@
 ![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/sequence.PNG)
 
  ## 5 Диаграмма классов <a name="5"></a>
- 
+![alt-текст](https://github.com/IrynaSkiba/English-Time/blob/master/Documentation/UML/Classes.PNG)
+
  ## 6 Диаграммы состояний <a name="6"></a>
  
  #### 6.1 Тренировка слов <a name="6.1"></a>
