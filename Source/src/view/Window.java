@@ -1,21 +1,23 @@
 package view;
-import controller.*;
-import javafx.scene.Scene;
+
+import controller.Controller;
 import javafx.stage.Stage;
 
 public class Window {
-    Controller controller;
+    private Controller controller;
     private Stage stage;
-    private Scene scene; //???????
     private MainWindow mainScene;
     private TrainingWindow trainingScene;
     private TranslateWindow translateScene;
     private SettingsWindow settingsScene;
 
+    public Window(Controller controller) {
+        this.controller = controller;
+        initView();
+    }
 
-    public void setScene(String scene){
-        switch (scene){
-
+    public void setScene(String scene) {
+        switch (scene) {
             case "MainWindow":
                 stage.setScene(mainScene.getScene());
                 break;
@@ -31,19 +33,13 @@ public class Window {
         }
     }
 
-    public void setController(Controller controller){
-        this.controller = controller;
-    }
-
-    public Window(Controller controller){
+    private void initView() {
         stage = new Stage();
         settingsScene = new SettingsWindow(controller);
         mainScene = new MainWindow(controller);
         trainingScene = new TrainingWindow(controller);
         translateScene = new TranslateWindow(controller);
-
         stage.setScene(mainScene.getScene());
-        //buildButtons();
         stage.setTitle("English-Time");
         stage.setMinHeight(300);
         stage.setMinWidth(500);

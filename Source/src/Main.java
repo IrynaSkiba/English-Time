@@ -4,15 +4,13 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     private Controller controller;
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         controller = new Controller();
         Window window = new Window(controller);
         controller.setWindow(window);
-        //window.setController(controller);
     }
 
     @Override

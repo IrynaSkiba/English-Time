@@ -13,15 +13,30 @@ import javafx.scene.layout.GridPane;
 public class TranslateWindow extends ParentWindow{
     private GridPane gridPane;
     private Scene scene;
-    Button buttonMenu;
-    Button buttonTranslate;
-    Button buttonAdd;
-    Label labelForTranslate;
-    TextField textField;
+    private Button buttonMenu;
+    private Button buttonTranslate;
+    private Button buttonAdd;
+    private Label labelForTranslate;
+    private TextField textField;
+
+    TranslateWindow(Controller controller){
+        super(controller);
+        fillScene();
+        scene = new Scene(gridPane,500,300);
+        buildButtons();
+    }
 
     @Override
     public Scene getScene() {
         return scene;
+    }
+
+    @Override
+    public void buildButtons() {
+        buttonMenu.setOnAction(event -> {
+            //todo флаг для определения на каком языке отображать слова
+            controller.changeScene("MainWindow");
+        });
     }
 
     private void fillScene() {
@@ -48,25 +63,5 @@ public class TranslateWindow extends ParentWindow{
 
         buttonAdd = new Button("+ Add");
         gridPane.add(buttonAdd,4,7,2,1);
-    }
-
-    @Override
-    public void buildButtons() {
-        buttonMenu.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                //if (!textField.getText().isEmpty()) {
-                //todo флаг для определения на каком языке отображать слова
-                controller.changeScene("MainWindow");
-                // }
-            }
-        });
-    }
-
-    public TranslateWindow(Controller controller){
-        super(controller);
-        fillScene();
-        scene = new Scene(gridPane,500,300);
-        buildButtons();
     }
 }

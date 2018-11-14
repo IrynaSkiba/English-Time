@@ -2,8 +2,6 @@ package controller;
 import view.*;
 
 public class Controller {
-
-
     private Window window;
 
     public void changeScene(String parentWindow){
@@ -13,5 +11,4 @@ public class Controller {
     public void setWindow(Window window) {
         this.window = window;
     }
-
 }
