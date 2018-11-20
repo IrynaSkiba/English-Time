@@ -1,3 +1,4 @@
+import model.DataBaseManager;
 import view.*;
 import controller.*;
 import javafx.application.Application;
@@ -8,9 +9,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        controller = new Controller();
+        controller = new Controller(10,100);
         Window window = new Window(controller);
         controller.setWindow(window);
+
+        DataBaseManager dataBaseManager = new DataBaseManager();
+        dataBaseManager.createNewTable();
     }
 
     @Override

@@ -40,9 +40,8 @@ public class Window {
         trainingScene = new TrainingWindow(controller);
         translateScene = new TranslateWindow(controller);
         stage.setScene(mainScene.getScene());
+        stage.sizeToScene();
         stage.setTitle("English-Time");
-        stage.setMinHeight(300);
-        stage.setMinWidth(500);
         stage.setResizable(false);
         stage.show();
     }

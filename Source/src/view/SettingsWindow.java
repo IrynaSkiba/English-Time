@@ -2,7 +2,6 @@ package view;
 
 import controller.Controller;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -20,7 +19,7 @@ public class SettingsWindow extends ParentWindow {
     SettingsWindow(Controller controller) {
         super(controller);
         fillScene();
-        scene = new Scene(gridPane, 500, 300);
+        scene = new Scene(gridPane, 450, 250);
         buildButtons();
     }
 
@@ -32,14 +31,12 @@ public class SettingsWindow extends ParentWindow {
     @Override
     public void buildButtons() {
         buttonMenu.setOnAction(event -> {
-            //todo флаг для определения на каком языке отображать слова
             controller.changeScene("MainWindow");
         });
     }
 
     private void fillScene() {
         gridPane = new GridPane();
-        gridPane.setAlignment(Pos.CENTER);
         gridPane.setHgap(10);
         gridPane.setVgap(10);
         gridPane.setPadding(new Insets(15, 15, 15, 15));
@@ -47,20 +44,20 @@ public class SettingsWindow extends ParentWindow {
         buttonMenu = new Button("Menu");
         gridPane.add(buttonMenu, 0, 0, 1, 1);
 
-        gridPane.add(new Label("Settings"), 2, 0, 3, 1);
+        gridPane.add(new Label("Settings"), 4, 1, 2, 1);
 
         gridPane.add(new Label("Enter amount words for learning a day"),
-                0, 1, 3, 1);
+                1, 2, 4, 1);
 
         textFieldGoal = new TextField();
-        gridPane.add(textFieldGoal, 4, 1, 1, 1);
+        gridPane.add(textFieldGoal, 5, 2, 2, 1);
 
-        gridPane.add(new Label("Enter amount repetitions a word"), 0, 3, 3, 1);
+        gridPane.add(new Label("Enter amount repetitions a word"), 1, 4, 4, 1);
 
         textFieldRepetitions = new TextField();
-        gridPane.add(textFieldRepetitions, 4, 3, 1, 1);
+        gridPane.add(textFieldRepetitions, 5, 4, 2, 1);
 
         buttonSave = new Button("Save");
-        gridPane.add(buttonSave, 4, 4, 2, 1);
+        gridPane.add(buttonSave, 5, 5, 2, 1);
     }
 }
